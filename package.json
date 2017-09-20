@@ -1,0 +1,20 @@
+{
+  "name": "countly-punchcard",
+  "title": "Countly punchcard plugin",
+  "version": "0.0.0",
+  "description": "Punchcard-like event visualization plugin",
+  "author": "Gustavo Rodríguez",
+  "homepage": "https://count.ly/marketplace/",
+  "repository" :{ "type" : "git", "url" : "http://github.com/octohedron/countly-punchcard-plugin"},
+  "bugs":{ "url" : "http://github.com/octohedron/countly-punchcard-plugin/issues"},
+  "keywords": [
+    "countly",
+    "analytics",
+    "mobile",
+    "plugins",
+    "punchcard"
+  ],
+  "dependencies": {
+  },
+  "private": true
+}
