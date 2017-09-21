@@ -1,6 +1,3 @@
-// var countlyModel = require("../../../../api/lib/countly.model.js"),
-//   countlyCommon = require("../../../../api/lib/countly.common.js");
-
 (function() {
   //we will store our data here
   var _data = {};
