@@ -18,11 +18,11 @@ countlyDb
         done();
       }
       countlyDb.command(
-        { convertToCapped: "events" + app._id, size: 10000000, max: 1000 },
+        { convertToCapped: "events_" + app._id, size: 10000000, max: 1000 },
         function(err, data) {
           if (err) {
             countlyDb.createCollection(
-              "events" + app._id,
+              "events_" + app._id,
               { capped: true, size: 10000000, max: 1000 },
               cb
             );

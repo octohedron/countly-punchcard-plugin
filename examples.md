@@ -206,9 +206,7 @@
   validateUserForGlobalAdmin: [Function: validateUserForGlobalAdmin] }
 ```
 
-
-
-
+### response from the API
 [
   {
     "_id": "59c106978593a810477cfe53",
