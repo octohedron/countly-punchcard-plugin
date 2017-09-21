@@ -211,19 +211,16 @@
 ```json
 [
   {
-    "_id": "59c106978593a810477cfe53",
     "type": "mobile",
     "dow": "0",
     "hour": "10"
   },
   {
-    "_id": "59c1069ce5df6c1048cc52c4",
     "type": "mobile",
     "dow": "0",
     "hour": "10"
   },
   {
-    "_id": "59c1123e9aa30c11b8a552e7",
     "type": "mobile",
     "dow": "0",
     "hour": "10"
