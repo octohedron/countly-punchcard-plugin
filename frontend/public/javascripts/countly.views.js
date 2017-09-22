@@ -81,8 +81,7 @@ $(document).ready(function() {
  * data is an array, returns a string
  */
 function transformForD3(data) {
-  let stringData = "";
-  let daysOfWeek = [
+  var daysOfWeek = [
     "",
     "Sunday",
     "Monday",
@@ -92,12 +91,12 @@ function transformForD3(data) {
     "Friday",
     "Saturday"
   ];
-  let stringArray = new Array(8);
-  for (let day = 0; day < 8; day++) {
+  var stringArray = new Array(8);
+  for (var day = 0; day < 8; day++) {
     stringArray[day] = new Array(24);
   }
-  for (let day = 0; day < 8; day++) {
-    for (let hour = 0; hour < stringArray[day].length; hour++) {
+  for (var day = 0; day < 8; day++) {
+    for (var hour = 0; hour < stringArray[day].length; hour++) {
       if (hour === 0) {
         stringArray[day][hour] = daysOfWeek[day];
       }
@@ -105,7 +104,7 @@ function transformForD3(data) {
         stringArray[day][hour] = hour;
       }
       // loop the data
-      for (let k = 0; k < data.length; k++) {
+      for (var k = 0; k < data.length; k++) {
         if (
           parseInt(data[k].dow) + 1 === day &&
           parseInt(data[k].hour) + 1 === hour
@@ -124,9 +123,9 @@ function transformForD3(data) {
     }
   }
   // console.log(stringArray.join(","));
-  let result = ",";
-  for (let x = 0; x < stringArray.length; x++) {
-    for (let y = 0; y < stringArray[x].length; y++) {
+  var result = ",";
+  for (var x = 0; x < stringArray.length; x++) {
+    for (var y = 0; y < stringArray[x].length; y++) {
       result = result.concat(stringArray[x][y]);
       if (y === stringArray[x].length - 1) {
         result = result.concat('\n');
