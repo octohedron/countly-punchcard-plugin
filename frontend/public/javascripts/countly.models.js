@@ -27,7 +27,7 @@
 
   //return data that we have
   countlyPunchcard.getData = function() {
-    console.log(_data);
+    // console.log(_data);
     return _data;
   };
 
